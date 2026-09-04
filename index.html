@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WDW9KBC3G8"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-WDW9KBC3G8');
+</script>
+<title>Ownership in AI-Assisted Everyday Tasks</title>
+<meta name="description" content="When does work done with AI still feel like ours? The short version of an exploratory survey of two tasks per person: one that felt like their own and one that did not.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--bg:#faf9f6;--card:#ffffff;--ink:#1c1c1c;--ink2:#3d3c38;--mute:#6f6d68;--line:#e3dfd5;--mid:#d6d0c2;--pos:#33639c;--high:#3e7a5e;--low:#c4692a;
+ --take-bg:#fbf5df;--take-line:#8a7a1f;--take-ink:#4d4310;--shadow:0 1px 2px rgba(28,28,28,.06),0 6px 20px rgba(28,28,28,.05);--grid:#ebe8e0;--tip-bg:#1c1c1c;--tip-ink:#faf9f6;--pos-text:#33639c;--neg-text:#a13d33;--pos-dot:#33639c;--grey-dot:#a9a59c;color-scheme:light}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#161513;--card:#1f1e1b;--ink:#ecebe5;--ink2:#cfccc4;--mute:#a19e96;--line:#34322d;--mid:#7a7466;--take-bg:#2a2718;--take-line:#c9b64a;--take-ink:#e8dfae;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);--grid:#2c2a26;--tip-bg:#ecebe5;--tip-ink:#161513;--pos-text:#9db8e0;--neg-text:#e09a8e;--pos-dot:#6f96cc;--grey-dot:#8a867d;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161513;--card:#1f1e1b;--ink:#ecebe5;--ink2:#cfccc4;--mute:#a19e96;--line:#34322d;--mid:#7a7466;--take-bg:#2a2718;--take-line:#c9b64a;--take-ink:#e8dfae;--shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);--grid:#2c2a26;--tip-bg:#ecebe5;--tip-ink:#161513;--pos-text:#9db8e0;--neg-text:#e09a8e;--pos-dot:#6f96cc;--grey-dot:#8a867d;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3","Source Sans Pro","Segoe UI",system-ui,sans-serif;font-variant-numeric:tabular-nums}
+a{color:var(--pos)}
+h1,h2,h3,h4{font-family:"Source Serif 4","Iowan Old Style",Georgia,"Times New Roman",serif;font-weight:600;letter-spacing:-.005em;text-wrap:balance}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.08;margin:0 0 .7rem;font-weight:700}
+h2{font-size:clamp(1.45rem,2.6vw,1.9rem);line-height:1.15;margin:0}
+h3{font-size:1.15rem;margin:0 0 .3rem}
+h4{font-size:1.05rem;margin:0 0 .25rem}
+p{margin:0 0 1rem}
+q{quotes:"“" "”";font-style:italic;color:var(--ink2)}
+.wrap{max-width:56rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+main.wrap{padding-bottom:3.5rem}
+.eyebrow{display:inline-block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:.4rem}
+.section-head{margin:0 0 .9rem}
+section{padding:2.6rem 0 .6rem;border-top:1px solid var(--line)}
+.lead{font-size:1.05rem}
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1.2rem;height:3rem}
+.nav .brand{font-family:"Source Serif 4",Georgia,serif;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;color:var(--ink);text-decoration:none}
+.themebtn{display:inline-grid;place-items:center;width:2.1rem;height:2.1rem;background:none;border:1px solid var(--line);color:var(--mute);border-radius:999px;padding:0;cursor:pointer;flex:none}
+.themebtn:hover{color:var(--ink);border-color:var(--mute)}
+.themebtn svg{width:1.05rem;height:1.05rem;display:block}
+.themebtn .sun{display:none}
+:root[data-theme="dark"] .themebtn .sun{display:block}
+:root[data-theme="dark"] .themebtn .moon{display:none}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .themebtn .sun{display:block}:root:not([data-theme="light"]) .themebtn .moon{display:none}}
+:focus-visible{outline:2px solid var(--pos);outline-offset:2px}
+.hero{padding:3rem 0 1rem;border-top:0}
+.kicker{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);font-weight:600}
+.hero .lede{font-size:1.15rem;line-height:1.5;color:var(--ink2);margin:0 0 1.2rem}
+.tldr{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1rem 1.2rem .4rem;box-shadow:var(--shadow);margin:0 0 1.8rem}
+.tldr .k{display:block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:.5rem}
+.tldr ol{margin:0;padding-left:1.2rem}
+.tldr li{margin:0 0 .6rem;font-family:"Source Serif 4",Georgia,serif;font-size:1.04rem;line-height:1.45}
+.tldr li::marker{color:var(--pos);font-weight:600}
+.figure{margin:1.2rem 0 1.4rem}
+.caption{color:var(--mute);font-size:.9rem;margin:0 0 .5rem}
+.chart{position:relative}
+.chart svg{display:block;width:100%;height:auto;font-family:"Source Sans 3","Segoe UI",system-ui,sans-serif}
+.chart .lab{fill:var(--ink);font-size:13px}.chart .sub{fill:var(--mute);font-size:11.5px}
+.ctitle{font-family:"Source Serif 4",Georgia,serif;font-weight:600;font-size:.95rem;line-height:1.3;color:var(--ink);margin:1.1rem 0 .4rem}
+.legend+.ctitle{margin-top:.3rem}
+.chart>div+div{margin-top:1.4rem}
+.chart .bg{paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}
+.chart g[tabindex]{outline:none}.chart g[tabindex]:focus-visible{outline:2px solid var(--pos);outline-offset:2px}
+.chart .grid{stroke:var(--grid);stroke-width:1}.chart .axis{fill:var(--mute);font-size:11px}
+.chart .val{font-size:12px;font-weight:600;pointer-events:none}.chart .val.dark{fill:#fff}.chart .val.light{fill:#1c1c1c}
+.chart .pos{fill:var(--pos-text)}.chart .neg{fill:var(--neg-text)}.chart .dot-pos{fill:var(--pos-dot)}.chart .dot-grey{fill:var(--grey-dot)}
+.chart .conn{stroke:var(--mid)}.chart .axis.pos{font-weight:600}
+.chart .seg{stroke:var(--card);stroke-width:1.2;transition:opacity .15s}.chart .seg:hover{opacity:.82}
+.legend{display:flex;flex-wrap:wrap;gap:.35rem 1rem;margin:.2rem 0 .6rem;font-size:.85rem;color:var(--mute)}
+.legend i{display:inline-block;width:.75rem;height:.75rem;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.tip{position:fixed;z-index:50;pointer-events:none;background:var(--tip-bg);color:var(--tip-ink);font-size:.85rem;line-height:1.35;padding:.45rem .6rem;border-radius:4px;box-shadow:var(--shadow);max-width:min(22rem,calc(100vw - 16px));opacity:0;transition:opacity .12s}
+.tip.on{opacity:1}
+.fig1-quotes{list-style:none;padding:0;margin:.3rem 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:.5rem .9rem;font-family:"Source Serif 4",Georgia,serif;font-style:italic;font-size:.95rem;color:var(--ink2)}
+.fig1-quotes li{position:relative;padding:.4rem .6rem .4rem 1rem;border-left:1px solid var(--line)}
+.fig1-quotes .pin{position:absolute;left:-4px;top:.65rem;width:7px;height:7px;border-radius:50%}
+.fig1-quotes .who{display:block;font-family:"Source Sans 3",system-ui,sans-serif;font-style:normal;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin-bottom:.1rem}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.9rem;margin:.6rem 0 1rem}
+@media (max-width:879px){.quotes{grid-template-columns:repeat(2,minmax(0,1fr))}.quotes .quote:nth-child(3):last-child{grid-column:1/-1}}
+@media (max-width:580px){.quotes{grid-template-columns:1fr}}
+.quote{margin:0;background:var(--card);border:1px solid var(--line);border-radius:6px;padding:.9rem 1rem .7rem;display:flex;flex-direction:column;gap:.6rem;box-shadow:var(--shadow);position:relative}
+.quote::before{content:"";position:absolute;left:0;top:.8rem;bottom:.8rem;width:3px;border-radius:2px;background:var(--mute)}
+.quote.high::before{background:var(--high)}.quote.low::before{background:var(--low)}
+.quote blockquote{margin:0;font-family:"Source Serif 4",Georgia,serif;font-size:1.02rem;line-height:1.42}
+.quote figcaption{display:flex;flex-wrap:wrap;gap:.2rem .6rem;font-size:.78rem;color:var(--mute);margin-top:auto}
+.quote .role{font-weight:600;color:var(--ink2)}.quote .kind::before{content:"·";margin-right:.6rem}
+.quote.high .kind{color:var(--high)}.quote.low .kind{color:var(--low)}
+.recs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem 2rem;margin-top:.8rem}
+@media (max-width:560px){.recs{grid-template-columns:1fr}}
+.rec p{color:var(--ink2);font-size:.95rem;margin:0 0 .5rem}.rec p.q{color:var(--mute)}
+footer{border-top:1px solid var(--line);margin-top:2.4rem;padding:1.4rem 0 2.5rem;color:var(--mute);font-size:.88rem}
+footer p{margin:0 0 .6rem}
+@media (max-width:640px){body{font-size:16px}.hero{padding-top:2rem}section{padding-top:2rem}.nav .brand{font-size:.875rem}main.wrap{padding-bottom:2.5rem}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="wrap">
+  <a class="brand" href="#top">Ownership in AI-Assisted Everyday Tasks</a>
+  <button class="themebtn" id="themebtn" type="button" aria-label="Switch to dark mode" title="Switch theme">
+    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+  </button>
+</div></nav>
+
+<main class="wrap" id="top">
+<section class="hero" id="tldr">
+  <h1>When does work done with AI still feel like ours?</h1>
+  <p class="lede">We report a qualitative survey in which participants were asked to describe two recent, self-selected tasks completed with AI: one that felt like their own and one that did not.</p>
+  <div class="tldr"><span class="k">Overview</span><ol><li>Felt ownership depends on the process of collaboration: people disown work when they merely approve AI&#x27;s suggestions, but retain ownership when they lead, iterate, or rewrite.</li><li>Ownership can also extend to settings where people own the vision for a project but not the execution; respondents reported high ownership on tasks they could not have completed without AI.</li><li>Loss of personal voice and a lack of comprehension of the output both erode ownership.</li><li>Willingness to disclose AI use is often decoupled from actual pride or ownership, and instead shaped by community norms and fear of credit erasure.</li></ol></div>
+</section>
+
+<section class="theme" id="process">
+  <div class="section-head"><h2>Process drives ownership</h2></div>
+  <p class="lead">When asked what made the difference in ownership between their two tasks, respondents highlighted that ownership was about who led the process. We also see ownership diminishes when the human simply approves the AI output. Some users are intentional about protecting their process to preserve ownership.</p>
+  
+  <div class="quotes"><figure class="quote diff"><blockquote>“ownership comes from owning the decisions made during the processing of the information. If there was no processing of information nor synthesis then it doesn&#x27;t feel I own it.”</blockquote><figcaption><span class="role">Consultant</span><span class="kind">on what made the difference</span></figcaption></figure><figure class="quote low"><blockquote>“I reviewed, I looked, I was in the loop, but I wasn&#x27;t in charge.”</blockquote><figcaption><span class="role">Systems architect</span><span class="kind">low-ownership task</span></figcaption></figure><figure class="quote diff"><blockquote>“I rewrite all communication generated by AI so I own it.”</blockquote><figcaption><span class="role">Attorney</span><span class="kind">on what made the difference</span></figcaption></figure></div>
+  
+</section><section class="theme" id="voice">
+  <div class="section-head"><h2>Homogeneous voice, personalization, and rejection</h2></div>
+  <p class="lead">For writing tasks, a prominent source of disownership was the voice. Respondents who invested in personalization of models reported retaining ownership. Interestingly, AI's bad outputs sometimes helped people build ownership by giving them a point of contrast.</p>
+  <div class="quotes"><figure class="quote low"><blockquote>“it wasn&#x27;t my voice and I didn&#x27;t like how ‘artificial’ it sounded”</blockquote><figcaption><span class="role">Clinical informatics specialist</span><span class="kind">low-ownership task</span></figcaption></figure><figure class="quote high"><blockquote>“My model already has md file for content creation. This shows samples of my work, direct instructions about my tone, guardrails of what not to say or do, etc.”</blockquote><figcaption><span class="role">Systems architect</span><span class="kind">high-ownership task</span></figcaption></figure><figure class="quote high"><blockquote>“I don&#x27;t always know what I want the final product to be until I see where the AI-generated version misses… even an imperfect output can be useful because the process of disagreeing with it or reshaping it becomes part of my own thinking.”</blockquote><figcaption><span class="role">Job applicant</span><span class="kind">high-ownership task</span></figcaption></figure></div>
+  
+</section><section class="theme" id="beyond">
+  <div class="section-head"><h2>Enabling outputs beyond one&#x27;s own abilities</h2></div>
+  <p class="lead">Counterintuitively, respondents were less certain they could have done their high-ownership task without AI, where 42% answered “definitely yes” against 63% for low-ownership tasks. Some of the most-owned projects would have been impossible for their creators and unlocked new creative powers. When the human directs the project's vision, AI occupies the role of a hired illustrator or junior teammate, which does not threaten ownership. Meanwhile, disowned tasks were often things people could do, but chose to delegate: routine emails, lookups, and formatting.</p>
+  <div class="quotes"><figure class="quote high"><blockquote>“I&#x27;m proud and excited to see my vision in real life since it lived in my head for so many years. My inability to get it out of my head originally led me to stop writing children&#x27;s books because of the illustration blocker.”</blockquote><figcaption><span class="role">Independent consultant</span><span class="kind">high-ownership task</span></figcaption></figure><figure class="quote diff"><blockquote>“As far as the deposition documents, it felt like directing a human paralegal. That&#x27;s my job.”</blockquote><figcaption><span class="role">Trial attorney</span><span class="kind">on what made the difference</span></figcaption></figure><figure class="quote diff"><blockquote>“The difference was if it was a task that I wanted to have ownership of, or a task that I would have rather not have had to do in the first place.”</blockquote><figcaption><span class="role">Tech executive</span><span class="kind">on what made the difference</span></figcaption></figure></div>
+  <div class="figure">
+    <div class="chart" data-chart="ability"></div>
+    <ul class="fig1-quotes"><li><span class="pin" style="background:#a13d33"></span><span class="who">High ownership · definitely not</span>“wanted to build this sort of thing for over a decade, now I can code with my AI assistant(s)… It&#x27;s all still mine, AI is just a translator.”</li><li><span class="pin" style="background:#33639c"></span><span class="who">High ownership · definitely yes</span>“It is me - minus friction. My language and ideas.”</li><li><span class="pin" style="background:#33639c"></span><span class="who">High ownership · definitely yes</span>“personalization and verification (done right) take time and keep my brain connected enough to make me feel like the final product is me.”</li><li><span class="pin" style="background:#33639c"></span><span class="who">Low ownership · definitely yes</span>“it sounded nothing like me… AI emails sound very vanilla”</li><li><span class="pin" style="background:#33639c"></span><span class="who">Low ownership · definitely yes</span>“I provided the intent and information… I feel more like I approved the output than authored it.”</li><li><span class="pin" style="background:#a13d33"></span><span class="who">Low ownership · definitely not</span>“In general, topics I process using AI AND I know little about, do not feel like my own work”</li></ul>
+  </div>
+  
+</section><section class="theme" id="comprehension">
+  <div class="section-head"><h2>No ownership without comprehension</h2></div>
+  <p class="lead">One route towards psychological ownership is intimately knowing the task. In our study, ownership failed when respondents could not understand the artifact or evaluate the output. Without comprehension, people felt little responsibility for maintaining and defending their work.</p>
+  
+  <div class="quotes"><figure class="quote high"><blockquote>“Claude was as confused as me, so when the problem finally did get solved I felt like I actually played a role in getting to the solution and I fully understood what had happened”</blockquote><figcaption><span class="role">Student</span><span class="kind">high-ownership task</span></figcaption></figure><figure class="quote low"><blockquote>“I really don&#x27;t understand much of the codebase… I wouldn&#x27;t consider this my work at all… honestly I&#x27;ll probably be annoyed if I have to patch it in the future since I don&#x27;t even feel responsible for it”</blockquote><figcaption><span class="role">Student</span><span class="kind">low-ownership task</span></figcaption></figure><figure class="quote low"><blockquote>“I certainly don&#x27;t know enough about the topic to judge and evaluate the output - hence does not feel like something I would call ‘mine’”</blockquote><figcaption><span class="role">Consultant</span><span class="kind">low-ownership task</span></figcaption></figure></div>
+  
+</section><section class="theme" id="disclosure">
+  <div class="section-head"><h2>Disclosure</h2></div>
+  <p class="lead">Respondents' willingness to disclose AI use varied widely and often depended on the situation. People cautiously open to disclosure generally preferred to narrate the process of AI usage rather than a label of AI-generated or not. Often, they fear credit erasure under a simple label. As a result of these complex social pressures, willingness to disclose AI use is not necessarily coupled with feelings of pride or ownership of the work.</p>
+  <div class="quotes"><figure class="quote high"><blockquote>“I would tell others how I used AI, but may feel uncomfortable if I had to state that AI was used for it without being able to give further explanation, as I would worry that people would assume the code itself was mostly or entirely AI generated, thus discounting my contribution.”</blockquote><figcaption><span class="role">Software engineering intern</span><span class="kind">high-ownership task</span></figcaption></figure><figure class="quote high"><blockquote>“Not that I&#x27;m not proud, but there is a stigma that I didn&#x27;t do any work if I let people know I used AI… as if I don&#x27;t think for myself or that I am lazy.”</blockquote><figcaption><span class="role">Art director</span><span class="kind">high-ownership task</span></figcaption></figure><figure class="quote low"><blockquote>“Proud, not really. Comfortable sharing, absolutely.”</blockquote><figcaption><span class="role">QA analyst</span><span class="kind">low-ownership task</span></figcaption></figure></div>
+  <div class="figure"><div class="chart" data-chart="pride"></div></div>
+</section>
+
+<section id="memory">
+  <div class="section-head"><h2>What do people use AI for, and what did they choose to reflect on?</h2></div>
+  <p class="lead">On the common tasks checklist, respondents reported a median of 9 of 17 task categories in the past 30 days. The most common were learning about a topic (94%) and looking up specific information (87%). Of the tasks respondents chose to reflect on, only a handful were lookup- or learning-related tasks. Tasks respondents chose to reflect on were often writing and technical tasks. Ownership reflections often involved tasks that produced a significant artifact rather than informational use from day-to-day interaction.</p>
+  <div class="figure"><p class="caption">Grey: share of checklist respondents (n = 53) who used AI for each category in the past 30 days. Blue: share of the 107 reflected tasks mapped to that category.</p><div class="chart" data-chart="memory"></div></div>
+</section>
+
+<section id="next">
+  <div class="section-head"><h2>Recommendations</h2></div>
+  <p class="lead">Our findings motivate future research in the following themes:</p>
+  <div class="recs"><div class="rec"><h3>Focus on process</h3><p>How we can increase process visibility for users and collaborators?</p><p class="q">Does recording and displaying the interaction history strengthen felt ownership and calibrate self-attribution? How does visibility of a collaborator's process reshape ownership in shared projects? Can we measure adverse effects when people don't take ownership of the process (e.g., increased effort for reviewers)?</p></div><div class="rec"><h3>Personalization</h3><p>What are the effects of perceived vs actual personalization? Several respondents felt they had uniquely scaffolded their AI to adapt to them, making it now <em>their AI</em>.</p><p class="q">Are these personalization methods actually unique and effective? How does informing people that their scaffolding methods are actually similar change their perception of ownership?</p></div><div class="rec"><h3>Enabling the previously impossible</h3><p>People can feel great ownership over outputs that they could not have produced on their own, like illustrating a graphic novel. However, it is not clear how this sense of ownership coexists with low expertise in some areas of the output.</p><p class="q">Is this effect primarily present in cases where users may be strong <em>evaluators</em> but not strong <em>producers</em> of the work (e.g., the art critic vs. the artist)?</p></div><div class="rec"><h3>Promoting honest disclosure of AI use</h3><p>People can more authentically own their work and learn healthy modes of human-AI collaboration when communities encourage honesty around disclosing AI use. What factors encourage or discourage the producer from honestly disclosing AI use when it is required?</p><p class="q">What formats of disclosure are most effective (e.g., categorical vs. narrative)? How does social feedback on output quality affect willingness to disclose use?</p></div></div>
+</section>
+</main>
+
+
+<script>
+const DATA = {"L5": ["Definitely not", "Probably not", "Might or might not", "Probably yes", "Definitely yes"], "able": {"high": [[6, 7, 4, 15, 23], 55], "low": [[2, 7, 7, 5, 35], 56]}, "pride": {"high": [[32, 10, 1], 43], "low": [[11, 19, 14], 44]}, "discl": {"high": [[39, 8, 1], 48], "low": [[33, 4, 4], 41]}, "bypride": {"proud": [[33, 5, 1], 39], "not": [[24, 6, 3], 33]}, "memory": [{"label": "Learning about a topic", "past": 94.3, "refl": 2.8}, {"label": "Looking up specific information", "past": 86.8, "refl": 2.8}, {"label": "Editing something already written", "past": 79.2, "refl": 9.3}, {"label": "How-to / step-by-step guidance", "past": 69.8, "refl": 2.8}, {"label": "Summarizing, explaining, translating", "past": 69.8, "refl": 12.1}, {"label": "Brainstorming ideas", "past": 69.8, "refl": 4.7}, {"label": "Coding, math, data analysis", "past": 62.3, "refl": 24.3}, {"label": "Medical or health questions", "past": 60.4, "refl": 0.9}, {"label": "Writing messages, emails, communication", "past": 56.6, "refl": 26.2}, {"label": "Shopping or product research", "past": 50.9, "refl": 0.9}, {"label": "Planning (trip, event, gift, schedule)", "past": 49.1, "refl": 0.9}, {"label": "Making / editing images, audio, video", "past": 45.3, "refl": 4.7}, {"label": "Health, fitness, beauty, self-care", "past": 39.6, "refl": 0.0}, {"label": "Advice on a personal problem", "past": 28.3, "refl": 0.9}, {"label": "Cooking, recipes, meal planning", "past": 24.5, "refl": 0.0}, {"label": "Casual conversation, games, roleplay", "past": 24.5, "refl": 0.0}, {"label": "Creative writing", "past": 22.6, "refl": 1.9}, {"label": "Something else", "past": 15.1, "refl": 4.7}]};
+const SEGC = ["#a13d33","#c98374","#d6d0c2","#94adce","#33639c"], PDC = ["#33639c","#d6d0c2","#a13d33"], HIGH = "#3e7a5e", LOW = "#c4692a";
+const NS = "http://www.w3.org/2000/svg";
+const tip = document.createElement("div"); tip.className = "tip"; document.body.appendChild(tip);
+function showTipAt(x, y, h){ tip.innerHTML = h; tip.classList.add("on"); const pad = 14; const r = tip.getBoundingClientRect(); let L = x + pad, T = y + pad;
+  if (L + r.width > innerWidth - 8) L = Math.max(8, x - r.width - pad); if (T + r.height > innerHeight - 8) T = Math.max(8, y - r.height - pad); tip.style.left = L + "px"; tip.style.top = T + "px"; }
+function showTip(e, h){ showTipAt(e.clientX, e.clientY, h); }
+function hideTip(){ tip.classList.remove("on"); }
+function bindTip(node, html){
+  node.addEventListener("pointermove", e => { if (e.pointerType !== "touch") showTip(e, html); });
+  node.addEventListener("pointerleave", e => { if (e.pointerType !== "touch") hideTip(); });
+  node.addEventListener("pointerdown", e => { if (e.pointerType === "touch") { e.stopPropagation(); showTip(e, html); } });
+  node.addEventListener("focus", () => { focused = node; focusTip(); });
+  node.addEventListener("blur", () => { focused = null; hideTip(); });
+  function focusTip(){ const b = node.getBoundingClientRect(); showTipAt(b.left + b.width / 2, b.bottom, html); }
+  node.focusTip = focusTip;
+}
+let focused = null;
+document.addEventListener("pointerdown", hideTip);
+addEventListener("scroll", () => { if (focused) focused.focusTip(); else hideTip(); }, {passive: true});
+function el(tag, attrs, parent){ const n = document.createElementNS(NS, tag); for (const k in attrs) n.setAttribute(k, attrs[k]); if (parent) parent.appendChild(n); return n; }
+function text(parent, x, y, s, cls, anchor){ const t = el("text", {x, y, class: cls || "lab", "text-anchor": anchor || "start", "dominant-baseline": "middle"}, parent); t.textContent = s; return t; }
+function titleOf(node, s){ const t = el("title", {}, node); t.textContent = s; }
+const pctr = (n, d) => Math.floor(n / d * 100 + 0.5), isDark = c => c === "#a13d33" || c === "#33639c";
+const BH = 30;
+function stackedRowH(compact){ return (compact ? 22 : 0) + BH + (compact ? 16 : 12); }
+function stacked(svg, x0, y0, W, rows, cats, colors, compact){
+  const LH = compact ? 22 : 0, LAB = compact ? 0 : 150, PADL = compact ? 34 : 0, PADR = compact ? 34 : 40, RH = stackedRowH(compact);
+  const xb = x0 + LAB + PADL, xe = x0 + W - PADR;
+  rows.forEach((r, i) => {
+    const top = y0 + i * RH, yc = top + LH + BH / 2, lx = x0 + (r.dot ? 15 : 0);
+    if (compact) { if (r.dot) el("circle", {cx: x0 + 5, cy: top + 8, r: 4, fill: r.dot}, svg);
+      const t = text(svg, lx, top + 8, r.label, "lab"); const sp = el("tspan", {class: "sub", dx: 8}, t); sp.textContent = "n = " + r.n; }
+    else { if (r.dot) el("circle", {cx: x0 + 5, cy: yc - 6, r: 4, fill: r.dot}, svg);
+      text(svg, lx, yc - 6, r.label, "lab"); text(svg, lx, yc + 10, "n = " + r.n, "sub"); }
+    let x = xb;
+    r.counts.forEach((c, j) => { if (!c) return; const w = (xe - xb) * c / r.n, p = pctr(c, r.n), desc = `${cats[j]}: ${c} of ${r.n} (${p}%)`;
+      const g = el("g", {tabindex: 0, role: "img", "aria-label": r.label + ", " + desc}, svg); titleOf(g, r.label + " — " + desc);
+      el("rect", {x, y: yc - BH / 2, width: w, height: BH, fill: colors[j], class: "seg"}, g);
+      const label = p + "%"; if (w >= (compact ? label.length * 7 + 6 : label.length * 7.5 + 14)) text(g, x + w / 2, yc, label, "val " + (isDark(colors[j]) ? "dark" : "light"), "middle");
+      else if (j === 0) text(g, xb - 6, yc, label, "val " + (colors[j] === "#33639c" ? "pos" : "neg"), "end");
+      else if (j === r.counts.length - 1) text(g, xe + 6, yc, label, "val " + (colors[j] === "#33639c" ? "pos" : "neg"), "start");
+      bindTip(g, `<b>${r.label}</b> — ${cats[j]}<br>${c} of ${r.n} answers (${p}%)`); x += w; });
+  });
+}
+function legend(container, cats, colors){ const d = document.createElement("div"); d.className = "legend"; cats.forEach((c, i) => { const s = document.createElement("span"); s.innerHTML = `<i style="background:${colors[i]}"></i>${c}`; d.appendChild(s); }); container.appendChild(d); }
+const chartW = c => Math.max(260, Math.floor(c.getBoundingClientRect().width));
+function panelChart(container, panels, cats, colors, aria){
+  const W = chartW(container), compact = W < 520;
+  legend(container, cats, colors);
+  panels.forEach(p => {
+    const t = document.createElement("p"); t.className = "ctitle"; t.textContent = p.title; container.appendChild(t);
+    const H = p.rows.length * stackedRowH(compact) - (compact ? 16 : 12) + 8;
+    const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": aria + ": " + p.title}, container);
+    stacked(svg, 0, 4, W, p.rows, cats, colors, compact);
+  });
+}
+const own = d => [{label: "High ownership", dot: HIGH, counts: d.high[0], n: d.high[1]}, {label: "Low ownership", dot: LOW, counts: d.low[0], n: d.low[1]}];
+function drawAbility(c){ panelChart(c, [{title: "Would you be able to do this task without AI?", rows: own(DATA.able)}], DATA.L5, SEGC, "Ability to do the task without AI, high vs low ownership"); }
+function drawPride(c){
+  const a = document.createElement("div"); c.appendChild(a);
+  panelChart(a, [{title: "Proud of the result?", rows: own(DATA.pride)}], ["Proud", "Mixed / satisfied", "Not proud"], PDC, "Pride by ownership");
+  const b = document.createElement("div"); c.appendChild(b);
+  panelChart(b, [{title: "Comfortable telling others you used AI?", rows: own(DATA.discl)},
+                 {title: "Comfortable telling others, by pride (both tasks pooled)", rows: [{label: "Proud", counts: DATA.bypride.proud[0], n: DATA.bypride.proud[1]}, {label: "Mixed or not proud", counts: DATA.bypride.not[0], n: DATA.bypride.not[1]}]}],
+             ["Comfortable", "Depends", "Uncomfortable"], PDC, "Disclosure comfort by ownership and by pride");
+}
+function drawMemory(c){
+  const rowsM = DATA.memory, W = chartW(c), compact = W < 560;
+  const LAB = compact ? 0 : 270, RH = compact ? 42 : 26, top = compact ? 18 : 34, H = top + rowsM.length * RH + 30;
+  const d = document.createElement("div"); d.className = "legend";
+  d.innerHTML = `<span><i style="background:var(--grey-dot)"></i>Used AI for this in the past 30 days (% of respondents, n = 53)</span><span><i style="background:var(--pos-dot)"></i>Tasks chosen for reflection (% of the 107 tasks)</span>`; c.appendChild(d);
+  const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Everyday AI use versus the tasks chosen for reflection"}, c);
+  const xb = compact ? 8 : LAB, xe = W - (compact ? 46 : 60), px = p => xb + (xe - xb) * p / 100;
+  [0, 25, 50, 75, 100].forEach(p => { el("line", {x1: px(p), x2: px(p), y1: top - 10, y2: top + rowsM.length * RH, class: "grid"}, svg); text(svg, px(p), top + rowsM.length * RH + 14, p + "%", "axis", "middle"); });
+  rowsM.forEach((r, i) => { const y = top + i * RH + (compact ? RH - 13 : RH / 2); const a = px(r.past), b = px(r.refl);
+    const desc = `Used AI for this in the past 30 days: ${Math.round(r.past)}% of 53 respondents. Share of the 107 reflected tasks: ${Math.round(r.refl)}%`;
+    if (compact) text(svg, 0, top + i * RH + 9, r.label, "lab bg"); else text(svg, xb - 12, y, r.label, "lab", "end");
+    el("line", {x1: Math.min(a, b), x2: Math.max(a, b), y1: y, y2: y, class: "conn", "stroke-width": 4, "stroke-linecap": "round"}, svg);
+    const g = el("g", {tabindex: 0, role: "img", "aria-label": r.label + ". " + desc}, svg); titleOf(g, r.label + " — " + desc);
+    el("circle", {cx: a, cy: y, r: 6, class: "dot-grey"}, g); el("circle", {cx: b, cy: y, r: 6, class: "dot-pos"}, g);
+    const lo = Math.min(r.past, r.refl), hi = Math.max(r.past, r.refl);
+    if (hi - lo < 9) text(g, px(hi) + 12, y, `${Math.round(r.past)}% · ${Math.round(r.refl)}%`, "axis bg");
+    else { text(g, px(lo) + 12, y, Math.round(lo) + "%", r.refl <= r.past ? "axis pos bg" : "axis bg"); text(g, px(hi) + 12, y, Math.round(hi) + "%", "axis bg"); }
+    bindTip(g, `<b>${r.label}</b><br>Used AI for this in the past 30 days: ${Math.round(r.past)}% of 53 respondents<br>Share of the 107 reflected tasks: ${Math.round(r.refl)}%`); });
+}
+const draws = {ability: drawAbility, pride: drawPride, memory: drawMemory};
+const charts = [...document.querySelectorAll("[data-chart]")];
+function render(n){ hideTip(); n.replaceChildren(); n.dataset.w = chartW(n); draws[n.dataset.chart](n); }
+charts.forEach(render);
+if ("ResizeObserver" in window) { const ro = new ResizeObserver(() => charts.forEach(n => { if (Math.abs(chartW(n) - +n.dataset.w) > 1) render(n); })); charts.forEach(n => ro.observe(n)); }
+else { let t; addEventListener("resize", () => { clearTimeout(t); t = setTimeout(() => charts.forEach(n => { if (chartW(n) !== +n.dataset.w) render(n); }), 150); }); }
+const btn = document.getElementById("themebtn"), root = document.documentElement;
+const systemDark = () => window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+const current = () => root.getAttribute("data-theme") || (systemDark() ? "dark" : "light");
+function applyTheme(t){ root.setAttribute("data-theme", t); btn.setAttribute("aria-label", t === "dark" ? "Switch to light mode" : "Switch to dark mode"); }
+try { const saved = localStorage.getItem("theme"); if (saved === "light" || saved === "dark") applyTheme(saved); } catch (e) {}
+btn.setAttribute("aria-label", current() === "dark" ? "Switch to light mode" : "Switch to dark mode");
+btn.addEventListener("click", () => { const next = current() === "dark" ? "light" : "dark"; applyTheme(next); try { localStorage.setItem("theme", next); } catch (e) {} });
+</script>
+</body>
+</html>
