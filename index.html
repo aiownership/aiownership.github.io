@@ -50,6 +50,13 @@ section{padding:2.6rem 0 .6rem;border-top:1px solid var(--line)}
 :focus-visible{outline:2px solid var(--pos);outline-offset:2px}
 .hero{padding:3rem 0 1rem;border-top:0}
 .kicker{font-size:.78rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);font-weight:600}
+.hero .authors{font-size:1.02rem;line-height:1.5;margin:0 0 .3rem}
+.hero .authors a{color:var(--ink2);text-decoration:none}
+.hero .authors a:hover{color:var(--pos)}
+.hero .venue{font-size:.95rem;font-style:italic;color:var(--mute);margin:0 0 .8rem}
+.hero .links{margin:0 0 1.4rem}
+.btn{display:inline-block;font-size:.88rem;font-weight:600;padding:.3rem .9rem;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);text-decoration:none;box-shadow:var(--shadow)}
+.btn:hover{border-color:var(--pos);color:var(--pos)}
 .hero .lede{font-size:1.15rem;line-height:1.5;color:var(--ink2);margin:0 0 1.2rem}
 .tldr{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:1rem 1.2rem .4rem;box-shadow:var(--shadow);margin:0 0 1.8rem}
 .tldr .k{display:block;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:.5rem}
@@ -92,6 +99,10 @@ section{padding:2.6rem 0 .6rem;border-top:1px solid var(--line)}
 .recs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem 2rem;margin-top:.8rem}
 @media (max-width:560px){.recs{grid-template-columns:1fr}}
 .rec p{color:var(--ink2);font-size:.95rem;margin:0 0 .5rem}.rec p.q{color:var(--mute)}
+.bib{position:relative;background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:var(--shadow);margin:.6rem 0 1rem}
+.bib pre{margin:0;padding:1rem 1.2rem;overflow-x:auto;font:400 .82rem/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:var(--ink2)}
+.copybtn{position:absolute;top:.5rem;right:.5rem;font:600 .78rem "Source Sans 3",system-ui,sans-serif;padding:.2rem .65rem;border:1px solid var(--line);border-radius:999px;background:var(--bg);color:var(--mute);cursor:pointer}
+.copybtn:hover{color:var(--ink);border-color:var(--mute)}
 footer{border-top:1px solid var(--line);margin-top:2.4rem;padding:1.4rem 0 2.5rem;color:var(--mute);font-size:.88rem}
 footer p{margin:0 0 .6rem}
 @media (max-width:640px){body{font-size:16px}.hero{padding-top:2rem}section{padding-top:2rem}.nav .brand{font-size:.875rem}main.wrap{padding-bottom:2.5rem}}
@@ -108,7 +119,10 @@ footer p{margin:0 0 .6rem}
 
 <main class="wrap" id="top">
 <section class="hero" id="tldr">
-  <h1>When does work done with AI still feel like ours?</h1>
+  <h1>Ownership in AI-Assisted Everyday Tasks</h1>
+  <p class="authors"><a href="https://weimegan.github.io">Megan Wei</a>, <a href="https://melaniesubbiah.github.io/">Melanie Subbiah</a>, <a href="https://www.ri.cmu.edu/ri-people/audrey-lee/">Audrey Lee</a>, <a href="https://annyadahmani.github.io/">Annya Dahmani</a>, <a href="https://www.linkedin.com/in/daveedwards2">Dave Edwards</a>, <a href="https://www.linkedin.com/in/helenedwardskiwi">Helen Edwards</a>, <a href="https://cs.brown.edu/people/epavlick/">Ellie Pavlick</a></p>
+  <p class="venue">NeurIPS AI and the Self Workshop 2026</p>
+  <p class="links"><a class="btn" href="https://arxiv.org/abs/2609.20658">Paper</a></p>
   <p class="lede">We report a qualitative survey in which participants were asked to describe two recent, self-selected tasks completed with AI: one that felt like their own and one that did not.</p>
   <div class="tldr"><span class="k">Overview</span><ol><li>Felt ownership depends on the process of collaboration: people disown work when they merely approve AI&#x27;s suggestions, but retain ownership when they lead, iterate, or rewrite.</li><li>Ownership can also extend to settings where people own the vision for a project but not the execution; respondents reported high ownership on tasks they could not have completed without AI.</li><li>Loss of personal voice and a lack of comprehension of the output both erode ownership.</li><li>Willingness to disclose AI use is often decoupled from actual pride or ownership, and instead shaped by community norms and fear of credit erasure.</li></ol></div>
 </section>
@@ -156,6 +170,19 @@ footer p{margin:0 0 .6rem}
   <div class="section-head"><h2>Recommendations</h2></div>
   <p class="lead">Our findings motivate future research in the following themes:</p>
   <div class="recs"><div class="rec"><h3>Focus on process</h3><p>How we can increase process visibility for users and collaborators?</p><p class="q">Does recording and displaying the interaction history strengthen felt ownership and calibrate self-attribution? How does visibility of a collaborator's process reshape ownership in shared projects? Can we measure adverse effects when people don't take ownership of the process (e.g., increased effort for reviewers)?</p></div><div class="rec"><h3>Personalization</h3><p>What are the effects of perceived vs actual personalization? Several respondents felt they had uniquely scaffolded their AI to adapt to them, making it now <em>their AI</em>.</p><p class="q">Are these personalization methods actually unique and effective? How does informing people that their scaffolding methods are actually similar change their perception of ownership?</p></div><div class="rec"><h3>Enabling the previously impossible</h3><p>People can feel great ownership over outputs that they could not have produced on their own, like illustrating a graphic novel. However, it is not clear how this sense of ownership coexists with low expertise in some areas of the output.</p><p class="q">Is this effect primarily present in cases where users may be strong <em>evaluators</em> but not strong <em>producers</em> of the work (e.g., the art critic vs. the artist)?</p></div><div class="rec"><h3>Promoting honest disclosure of AI use</h3><p>People can more authentically own their work and learn healthy modes of human-AI collaboration when communities encourage honesty around disclosing AI use. What factors encourage or discourage the producer from honestly disclosing AI use when it is required?</p><p class="q">What formats of disclosure are most effective (e.g., categorical vs. narrative)? How does social feedback on output quality affect willingness to disclose use?</p></div></div>
+</section>
+
+<section id="citation">
+  <div class="section-head"><h2>Cite our work</h2></div>
+  <div class="bib"><button class="copybtn" id="copybib" type="button">Copy</button><pre id="bibtex">@inproceedings{wei2026ownership,
+  title     = {Ownership in AI-Assisted Everyday Tasks},
+  author    = {Wei, Megan and Subbiah, Melanie and Lee, Audrey and Dahmani, Annya and Edwards, Dave and Edwards, Helen and Pavlick, Ellie},
+  booktitle = {NeurIPS AI and the Self Workshop},
+  year      = {2026},
+  eprint    = {2609.20658},
+  archivePrefix = {arXiv},
+  url       = {https://arxiv.org/abs/2609.20658}
+}</pre></div>
 </section>
 </main>
 
@@ -260,6 +287,8 @@ function applyTheme(t){ root.setAttribute("data-theme", t); btn.setAttribute("ar
 try { const saved = localStorage.getItem("theme"); if (saved === "light" || saved === "dark") applyTheme(saved); } catch (e) {}
 btn.setAttribute("aria-label", current() === "dark" ? "Switch to light mode" : "Switch to dark mode");
 btn.addEventListener("click", () => { const next = current() === "dark" ? "light" : "dark"; applyTheme(next); try { localStorage.setItem("theme", next); } catch (e) {} });
+const copyBtn = document.getElementById("copybib");
+copyBtn.addEventListener("click", () => { navigator.clipboard.writeText(document.getElementById("bibtex").textContent).then(() => { copyBtn.textContent = "Copied"; setTimeout(() => copyBtn.textContent = "Copy", 1500); }); });
 </script>
 </body>
 </html>
